@@ -1,0 +1,29 @@
+/*
+Theme Name: Travelo
+Version: 1.0
+Author: Barun
+Text Domain: tvlo
+*/
+
+#up-trips{
+    display: none;
+}
+#up-trips.active{
+    display: block;
+}
+
+.single_destination .thumb a{
+    z-index: 10;
+    position: relative;
+}
+.single_destination .content{
+    z-index: 15 !important;
+}
+
+.no-trip-found{
+    display: none;
+    padding-top: 140px;
+}
+.no-trip-found.active{
+    display: block;
+}
