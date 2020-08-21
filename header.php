@@ -28,7 +28,9 @@
                                     <?php
                                         if(has_custom_logo()){
                                             the_custom_logo();
-                                        }
+                                        } else{?>
+                                            <a href="<?php echo site_url();?>"><?php bloginfo('name'); ?></a>
+                                        <?php }
                                     ?>
                                 </div>
                             </div>
