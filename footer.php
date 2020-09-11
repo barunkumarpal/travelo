@@ -181,14 +181,7 @@
     // Search Modal
   echo get_search_form(); ?>
    
-    <script>
-        $('#datepicker').datepicker({
-            iconsLibrary: 'fontawesome',
-            icons: {
-             rightIcon: '<span class="fa fa-caret-down"></span>'
-         }
-        });
-    </script>
+
     
     <?php wp_footer(); ?>
 </body>

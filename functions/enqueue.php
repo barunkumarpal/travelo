@@ -53,6 +53,6 @@ function theme_styles(){
         'home_url' => home_url('/')
         ]);
 
-    wp_enqueue_script( 'custom-js' , $src.'/custom.js', ['jquery'], $ver, true );
+    wp_enqueue_script( 'custom-js' , $src.'/custom.js', ['jquery-min'], $ver, true );
     
 }

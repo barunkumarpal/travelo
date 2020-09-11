@@ -52,4 +52,8 @@ require_once('functions/search_upcoming_trip.php');
 add_action('wp_ajax_searchtrip', 'search_up_trip');
 add_action('wp_ajax_nopriv_searchtrip', 'search_up_trip');
 
+// User Login
+require_once('functions/login_process.php');
+add_action('wp_ajax_nopriv_user_login', 'process_user_login');
+
 
