@@ -49,7 +49,7 @@
 
             <h3 class="text-center text-white mt-3 mb-3">OR</h3>
             <p class="text-center">
-                <a href="<?php echo site_url().'/cregistration';?>" class="btn btn-warning">Create an Account</a>
+                <a href="<?php echo site_url().'/user-registration';?>" class="btn btn-warning">Create an Account</a>
             </p>
             
         </div>

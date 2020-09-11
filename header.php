@@ -46,6 +46,8 @@
                                             'walker' => new Main_menu_walker()
                                         ]);
                                     }
+
+                                    echo wp_loginout();
                                         ?>
                                     </nav>
                                 </div>
