@@ -16,7 +16,21 @@ if($query->have_posts()){
                     <div class="single_testmonial text-center">
                         <div class="author_thumb">
                             <!-- <img src="img/testmonial/author.png" alt=""> -->
-                            <?php the_post_thumbnail('thumbnail');?>
+                            <?php 
+                            
+                            $thumbnail = get_avatar_url( get_the_ID(), [] );
+                            $post_thumbnail = get_the_post_thumbnail_url( get_the_ID(), 'thumbnail');
+                            ?>
+
+                            <img src="<?php if($post_thumbnail){
+                                        echo $post_thumbnail; } else {
+                                        echo $thumbnail;
+                                        }
+                                    ?>"
+                                 alt="">
+
+                            <?php
+                            ?>
                         </div>
                         <?php the_content(); ?>
                         <div class="testmonial_author">
