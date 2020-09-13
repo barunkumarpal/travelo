@@ -13,5 +13,6 @@
         // Custom Menu
         add_theme_support('custom-logo');
         
-        
+        // WP Subtitle Support ( Plugin )
+        add_post_type_support( 'destination', 'wps_subtitle' );
     }
